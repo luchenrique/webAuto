@@ -9,6 +9,7 @@ navegador = webdriver.Chrome(service=servico)
 
 navegador.get("https://docs.google.com/forms/d/e/1FAIpQLSe8FPkMAr5tG4OzWtidLGZNX7NrmRg-uQ1QR8eq37S9yZ7YTQ/viewform?usp=dialog")
 navegador.find_element('xpath', '//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input').send_keys("Lucas")
-
+navegador.find_element('xpath', '//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div[2]/textarea').send_keys("email@email.com")
+navegador.find_element('xpath', '//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/span/span').click()
 
 input("Pressione ENTER para sair...")
